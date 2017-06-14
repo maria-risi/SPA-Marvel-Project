@@ -1,0 +1,9 @@
+<div>
+    <section ng-include="'app/views/header.html'" id="header" style="position: inherit !important;"></section>
+
+    <div class="view-container" ui-view-container>
+        <section id="content" ui-view autoscroll="true"></section>
+    </div>
+
+    <div ng-include="'app/views/footer.html'"></div>
+</div>

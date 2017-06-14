@@ -1,0 +1,30 @@
+
+<div class="container-fluid">
+    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="" ng-repeat="comic in comics">
+            <div class="col-md-10">
+
+                <div class="col-md-6">
+                    <img style="width: 200px;height: 200px;border-radius: 50%;" src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}" />
+
+                </div>
+                <div class="col-md-6">
+                    {{comic.name}}
+                    {{comic.description}}
+                    Related Comics:
+                    {{comic.comics.items[0].name}}
+
+                    {{comic.comics.items[1].name}}
+
+                    {{comic.comics.items[2].name}}
+
+                    {{comic.comics.items[4].name}}
+                </div>
+
+            </div>
+        </div>
+
+
+        COMICS LIST
+    </div>
+</div>
