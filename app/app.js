@@ -2,8 +2,8 @@
 
 /**
  * @ngdoc overview
- * @name app
- * @description
+ * @Marvel Api
+ * @SPA application for displaying marvel characters and their respective asociated comics
  *
  * Main module of the application.
  */
@@ -15,29 +15,6 @@ var app = angular.module('app', [
     .run(['$rootScope', '$state', '$stateParams', function($rootScope, $state, $stateParams) {
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
-
-        $rootScope.setLoader = function(val){
-            if(val == true){
-                $("html").append('' +
-                    '<div id="shadowBox" class="shadowBox">' +
-                        '<div id="loader" class="sk-cube-grid centered">' +
-                            '<div class="sk-cube sk-cube1"></div> ' +
-                            '<div class="sk-cube sk-cube2"></div>' +
-                            '<div class="sk-cube sk-cube3"></div>' +
-                            '<div class="sk-cube sk-cube4"></div> ' +
-                            '<div class="sk-cube sk-cube5"></div> ' +
-                            '<div class="sk-cube sk-cube6"></div> ' +
-                            '<div class="sk-cube sk-cube7"></div>' +
-                            '<div class="sk-cube sk-cube8"></div> ' +
-                            '<div class="sk-cube sk-cube9"></div> ' +
-                        '</div>' +
-                    '</div>').addClass("disabled");
-            }else{
-                $("html").removeClass("disabled");
-                $("#loader").remove();
-                $("#shadowBox").remove();
-            }
-        };
 
         $rootScope.$on('$stateChangeSuccess', function(event, toState) {
 

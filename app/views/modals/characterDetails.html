@@ -1,0 +1,38 @@
+
+<div  class="row " >
+    <div id="modal" class="centered modal-container">
+        <div class="col-md-1 pull-right" ng-click="closeModal('character')" style="cursor: pointer">
+            <img  src="app/assets/img/btn-close.png"/>
+        </div>
+
+        <div class="col-md-12">
+            <img class="col-md-4 comic_thumbnail" src="{{selectedCharacter.thumbnail.path}}.{{selectedCharacter.thumbnail.extension}}" />
+            <div class="col-md-8" style="margin-top: 30px">
+                <p class="character-title">{{selectedCharacter.name}}</p>
+                <p class="description-txt" ng-if="selectedCharacter.description != ''  && selectedCharacter.description != null">{{selectedCharacter.description}}</p>
+                <p class="description-txt" ng-if="selectedCharacter.description == '' || selectedCharacter.description == null">The spectacular sequel to last year's OFFICIAL HANDBOOK OF THE MARVEL UNIVERSE: SPIDER-MAN 2004, this Official Handbook contains in-depth bios on more than 30 of the wisecracking web-slinger's closest allies and most infamous enemies - including the Stacy Twins, fresh from the pages of AMAZING SPIDER-MAN, and Toxin, in time for this month's TOXIN #1! Plus: An all-new cover by superstar artist Tom Raney, digitally painted by Morry Hollowell.
+                    <br>48 PGS./Marvel PSR...</p>
+
+
+            </div>
+
+        </div>
+
+        <div class="" style="margin-bottom: 0px">
+            <div class="col-md-6 btn-add " ng-if="comicAdded == false" ng-click="addToFavourites()">
+                <img class="" style="margin-top: 10px;margin-left: 10%;" src="app/assets/img/btn-favourites-default.png"/>
+                <p class="btn-font" align="center">ADD TO FAVOURITES</p>
+            </div>
+
+            <div class="col-md-6 btn-added"  ng-if="comicAdded == true" ng-click="deleteToFavourites()">
+                <img  style="margin-top: 10px;margin-left: 10%;"  src="app/assets/img/btn-favourites-primary.png"/>
+                <p class="btn-font" align="center" >ADDED TO FAVOURITES<p></p>
+            </div>
+            <div class="col-md-6 btn-shop " ng-click="addItemToCart(selectedCharacter.name)">
+                <img style="margin-top: 10px;margin-left: 10%;"  src="app/assets/img/shopping-cart-primary.png"/>
+                <p class="btn-font" align="center" >BUY FOR $3.99</p>
+            </div>
+        </div>
+
+    </div>
+</div>

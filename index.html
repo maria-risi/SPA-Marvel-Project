@@ -14,18 +14,27 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="icon" type="image/ico" href="app/assets/img/btn-favourites-primary.png" />
+    <link rel="icon" type="image/ico" href="app/assets/img/favicon-ironman.ico" />
 
+
+    <!--css-->
+    <link rel="stylesheet" href="app/assets/styles/main.css"/>
+    <link rel="stylesheet" href="app/assets/styles/buttons.css"/>
+    <link rel="stylesheet" href="app/assets/styles/fonts.css"/>
+    <link rel="stylesheet" href="node_modules/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/sweetalert/dist/sweetalert.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/><!--
+    <link rel="stylesheet" href="node_modules/ng2-bootstrap-grid/src/bootstrap-grid/bootstrap-grid.component.css"/>-->
 
 
     <!--Dependencias npm -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/angular/angular.js"></script>
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css"/>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="node_modules/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
     <script src="app/app.js"></script>
 
     <!--controllers-->
@@ -34,14 +43,21 @@
 
     <!--conf-->
     <script src="app/conf/comic_api_conf.js"></script>
+
     <!--services-->
-    <script src="app/services/interceptors/httpRequestInterceptor.js"></script>
+    <script src="app/services/interceptors/interceptor.js"></script>
     <script src="app/services/comicService.js"></script>
+    <script src="app/services/characterService.js"></script>
+
+    <!--filters-->
+    <script src="app/filters/searchCharacter.js"></script>
+    <script src="app/filters/pagination.js"></script>
+
 
 </head>
 
 
-<body id="appBody">
+<body id="">
 
 <!-- Application content-->
 <div ui-view>

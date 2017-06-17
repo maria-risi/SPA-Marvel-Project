@@ -1,0 +1,77 @@
+
+.character-title{
+    font-family: sans-serif;
+    margin-top:-30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/*comicList.hml*/
+
+.title-style{
+    font-weight: 600;
+    font-family:"sans-serif";
+    color: #3E3433;
+}
+
+.character-info {
+    z-index: 1;
+    position: relative;
+    background-color: white;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    padding: 2% 2% 2% 2%;
+    text-align: justify;
+    font-family: "sans-serif";
+    font-size: 15px;
+}
+
+.character-title{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.character-description{
+    min-height: 180px;
+}
+
+.description-txt{
+    color: #736F6E;
+    font-family: "sans-serif";
+    min-height: 115px;
+
+}
+
+
+.subtitle{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #736F6E;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "sans-serif";
+}
+
+.related-comic{
+    cursor: pointer;
+    font-family: "sans-serif";
+    color: #797470;
+}
+
+.related-comic:hover{
+    color: red;
+}
+
+.related-comic2{
+    font-size: 14px;
+    font-family: "sans-serif";
+    color: #797470;
+}
+
+.comic-title{
+    font-family: "sans-serif";
+    font-weight: 600;
+    color:#3E3433;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
