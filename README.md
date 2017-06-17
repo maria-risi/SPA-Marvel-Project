@@ -3,12 +3,6 @@
 SPA application for displaying marvel characters and their respective comics.
 
 
-Aplicación
-
-Dependencias:
-Para el manejo de dependencias se utilizó NPM
-
-
 ##**Instrucciones**
 
 1.  Descargar e instalar todas las dependencias y paquetes necesarios para ejecutar el proyecto.
@@ -22,7 +16,8 @@ $       grunt serve
     
 ##**Descripción del proyecto**
 
-    Proyecto de frontend desarrollado usando principalmente *Angular.js*, *Javascript*, *Css*, el cual consume el *MARVEL API REST* y está compuesto por los siguientes archivos:
+Proyecto de frontend desarrollado usando principalmente *Angular.js*, *Javascript*, *Css*, el cual consume el *MARVEL API REST* y está compuesto por los siguientes archivos:
+
 
 ###package.json
 
