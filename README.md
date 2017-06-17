@@ -28,14 +28,15 @@ Es el archivo que contiene los nombres de las librerías que utilizaremos para a
 
 Es el archivo base con el cual crearemos las tareas que necesitamos corra GruntJS por nosotros y que reside en la raíz del proyecto junto a package.json. En este archivo están definidas los plugins que utilizaremos y cómo deben trabajar, en esta ocasión incluyo los siguientes:
 
-concat: concatena y minifica librerías JavaScript.
-uglify: minifica archivos JavaScript.
-imagemin: comprime imágenes.
+#concat: concatena y minifica librerías JavaScript.
+#uglify: minifica archivos JavaScript.
+#imagemin: comprime imágenes.
 
 
 ###index.html
 
 El archivo index.html es la página principal del dominio al cual se accederá desde Internet,en este archivo se incluyen todas las librerías, estilos, servicios, controladores de nuestra aplicación.
+
 
 
 
